@@ -24,5 +24,19 @@
  "${modID}:PushForward": {
     "NAME": "Push forward!",
     "DESCRIPTION": "Take !D! damage. NL Draw !M! cards."
+  },
+  "${modID}:DarkEmbrace": {
+    "NAME": "Dark Embrace",
+    "DESCRIPTION": "Whenever you exhaust a card, NL draw a card."
+  },
+  "${modID}:FiendFire": {
+    "NAME": "Fiend Fire",
+    "DESCRIPTION": "Exhaust your hand, deal !D! damage for each card exhausted this way."
+  },
+  "${modID}:SappingSlashes": {
+    "NAME": "Sapping Slashes",
+    "DESCRIPTION": "Deal !D! damage !M! times, sap on every instance."
   }
+
+
 }

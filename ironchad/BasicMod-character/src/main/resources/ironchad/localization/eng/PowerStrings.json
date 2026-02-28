@@ -4,5 +4,11 @@
     "DESCRIPTIONS": [
       "You are Very Cool and Strong."
     ]
+  },
+  "${modID}:Masochism": {
+    "NAME": "Masochism",
+    "DESCRIPTIONS": [
+      "Whenever you do damage to yourself gain 1 stack."
+    ]
   }
 }

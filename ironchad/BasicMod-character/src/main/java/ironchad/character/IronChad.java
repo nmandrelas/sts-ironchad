@@ -3,15 +3,13 @@ package ironchad.character;
 import basemod.BaseMod;
 import basemod.abstracts.CustomEnergyOrb;
 import basemod.abstracts.CustomPlayer;
-import basemod.animations.SpriterAnimation;
+import basemod.animations.AbstractAnimation;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.math.MathUtils;
 import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.blue.Defend_Blue;
-import com.megacrit.cardcrawl.cards.green.Neutralize;
 import com.megacrit.cardcrawl.cards.red.Strike_Red;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -20,9 +18,11 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.helpers.CardLibrary;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
+import com.megacrit.cardcrawl.powers.RupturePower;
 import com.megacrit.cardcrawl.relics.BurningBlood;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import ironchad.cards.*;
+import ironchad.relics.BurnedBlood;
 
 import java.util.ArrayList;
 
@@ -38,7 +38,7 @@ public class IronChad extends CustomPlayer {
     public static final int ORB_SLOTS = 0;
 
     //Strings
-    private static final String ID = makeID("ironchad-nman"); //This should match whatever you have in the CharacterStrings.json file
+    private static final String ID = makeID("ironchad"); //This should match whatever you have in the CharacterStrings.json file
     private static String[] getNames() { return CardCrawlGame.languagePack.getCharacterString(ID).NAMES; }
     private static String[] getText() { return CardCrawlGame.languagePack.getCharacterString(ID).TEXT; }
 
@@ -120,9 +120,14 @@ public class IronChad extends CustomPlayer {
     public IronChad() {
         super(getNames()[0], Meta.IRONCHAD,
                 new CustomEnergyOrb(orbTextures, characterPath("energyorb/vfx.png"), layerSpeeds), //Energy Orb
-                new SpriterAnimation(characterPath("animation/default.scml"))); //Animation
+                new AbstractAnimation() { //Change the Animation line to this
+                    @Override
+                    public Type type() {
+                        return Type.NONE; //A NONE animation results in the image given in initializeClass being used
+                    }
+                });
 
-        initializeClass(null,
+        initializeClass(characterPath("image.png"),
                 SHOULDER_2,
                 SHOULDER_1,
                 CORPSE,
@@ -141,9 +146,15 @@ public class IronChad extends CustomPlayer {
         //List of IDs of cards for your starting deck.
         //If you want multiple of the same card, you have to add it multiple times.
         retVal.add(Strike.ID);
+        retVal.add(Strike.ID);
+        retVal.add(Strike.ID);
+        retVal.add(Strike.ID);
+        retVal.add(Defend.ID);
+        retVal.add(Defend.ID);
+        retVal.add(Defend.ID);
         retVal.add(Defend.ID);
         retVal.add(PainfulHeadbutt.ID);
-        retVal.add(PushForward.ID);
+        retVal.add(SappingSlashes.ID);
 
         return retVal;
     }
@@ -152,7 +163,7 @@ public class IronChad extends CustomPlayer {
     public ArrayList<String> getStartingRelics() {
         ArrayList<String> retVal = new ArrayList<>();
         //IDs of starting relics. You can have multiple, but one is recommended.
-        retVal.add(BurningBlood.ID);
+        retVal.add(BurnedBlood.ID);
 
         return retVal;
     }

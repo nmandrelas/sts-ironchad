@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="r11">
     <folder id="0">
-        <file id="0" name="object1.png" width="109" height="114" pivot_x="0" pivot_y="1"/>
+        <file id="0" name="object1.png" width="400" height="500" pivot_x="0" pivot_y="1"/>
         <file id="1" name="object2.png" width="40" height="40" pivot_x="0" pivot_y="1"/>
         <file id="2" name="object3.png" width="123" height="31" pivot_x="0" pivot_y="1"/>
     </folder>
