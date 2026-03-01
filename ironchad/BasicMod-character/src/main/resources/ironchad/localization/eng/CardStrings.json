@@ -36,7 +36,14 @@
   "${modID}:SappingSlashes": {
     "NAME": "Sapping Slashes",
     "DESCRIPTION": "Deal !D! damage !M! times, sap on every instance."
+  },
+  "${modID}:SappingFire": {
+    "NAME": "Sapping Fire",
+    "DESCRIPTION": "Exhaust your hand, deal !D! damage for each card exhausted this way, sap on every instance."
+  },
+  "${modID}:BlockingFire": {
+    "NAME": "Sapping Fire",
+    "DESCRIPTION": "Exhaust your hand, gain !B! block for each card exhausted this way, deal damage equal to your block."
   }
-
 
 }
