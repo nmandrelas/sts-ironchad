@@ -10,6 +10,7 @@ import com.badlogic.gdx.math.MathUtils;
 import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.red.BodySlam;
 import com.megacrit.cardcrawl.cards.red.Strike_Red;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -153,8 +154,8 @@ public class IronChad extends CustomPlayer {
         retVal.add(Defend.ID);
         retVal.add(Defend.ID);
         retVal.add(Defend.ID);
-        retVal.add(PainfulHeadbutt.ID);
         retVal.add(SappingSlashes.ID);
+        retVal.add(BodySlam.ID);
 
         return retVal;
     }

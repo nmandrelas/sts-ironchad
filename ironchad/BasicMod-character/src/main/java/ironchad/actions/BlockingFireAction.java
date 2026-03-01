@@ -1,31 +1,23 @@
 package ironchad.actions;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.ExhaustAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
-import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.powers.AbstractPower;
-import ironchad.powers.MasochismPower;
-
-import java.util.Objects;
 
 public class BlockingFireAction extends AbstractGameAction {
-    private DamageInfo info;
-    private int block;
-    private float startingDuration;
+    private final DamageInfo info;
+    private final int block;
 
     public BlockingFireAction(AbstractCreature target, DamageInfo info, int block) {
         this.info = info;
         this.setValues(target, info);
         this.actionType = ActionType.WAIT;
         this.attackEffect = AttackEffect.FIRE;
-        this.startingDuration = Settings.ACTION_DUR_FAST;
-        this.duration = this.startingDuration;
+        this.duration = Settings.ACTION_DUR_FAST;
         this.block = block;
     }
 
@@ -35,8 +27,7 @@ public class BlockingFireAction extends AbstractGameAction {
         for (int i = 0; i < count; ++i) {
             this.addToTop(new GainBlockAction(AbstractDungeon.player, block));
         }
-        info.base = AbstractDungeon.player.currentBlock;
-        this.addToBot(new DamageAction(this.target, this.info, AttackEffect.FIRE));
+        this.addToBot(new DamageBasedOnBlockAction(this.target, this.info));
 
 
         for (int i = 0; i < count; ++i) {

@@ -1,6 +1,6 @@
 {
   "modid": "${modID}",
-  "name": "${project.name}",
+  "name": "Ironchad",
   "author_list": ["${author}"],
   "description": "!(project.description)",
   "version": "${project.version}",
