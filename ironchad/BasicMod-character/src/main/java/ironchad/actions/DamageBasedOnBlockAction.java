@@ -7,6 +7,8 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 
+import static ironchad.BasicMod.logger;
+
 public class DamageBasedOnBlockAction extends AbstractGameAction {
     private final DamageInfo info;
 
@@ -20,6 +22,8 @@ public class DamageBasedOnBlockAction extends AbstractGameAction {
 
     public void update() {
         info.base = AbstractDungeon.player.currentBlock;
+        info.output = AbstractDungeon.player.currentBlock;
+        logger.info("Test {}", info.base);
         this.addToTop(new DamageAction(this.target, this.info, AttackEffect.BLUNT_HEAVY));
 
         this.isDone = true;
