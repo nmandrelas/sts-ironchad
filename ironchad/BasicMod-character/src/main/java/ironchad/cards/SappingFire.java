@@ -1,6 +1,5 @@
 package ironchad.cards;
 
-import com.megacrit.cardcrawl.actions.unique.FiendFireAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;

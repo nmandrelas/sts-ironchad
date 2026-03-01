@@ -44,6 +44,43 @@
   "${modID}:BlockingFire": {
     "NAME": "Blocking Fire",
     "DESCRIPTION": "Exhaust your hand, gain !B! block for each card exhausted this way, deal damage equal to your block."
+  },
+  "${modID}:BodySlam": {
+    "NAME": "Body Slam",
+    "DESCRIPTION": "Deal damage equal to your block."
+  },
+  "${modID}:ShrugItOff": {
+    "NAME": "Shrug It Off",
+    "DESCRIPTION": "Gain !B! block. Draw 1 card."
+  },
+  "${modID}:Havoc": {
+    "NAME": "Havoc",
+    "DESCRIPTION": "Play the top card of your deck and exhaust it."
+  },
+  "${modID}:PommelStrike": {
+    "NAME": "Pommel Strike",
+    "DESCRIPTION": "Deal !D! damage. NL Draw !M! cards."
+  },
+  "${modID}:TrueGrit": {
+    "NAME": "True Grit",
+    "DESCRIPTION": "Exhaust a random card in your hand. NL Gain !B! block.",
+    "UPGRADE_DESCRIPTION": "Exhaust a card in your hand. NL Gain !B! block."
+  },
+  "${modID}:FlameBarrier": {
+    "NAME": "Flame Barrier",
+    "DESCRIPTION": "Gain !B! block. NL Whenever you are attacked this turn deal !M! damage back"
+  },
+  "${modID}:FeelNoPain": {
+    "NAME": "Feel No Pain",
+    "DESCRIPTION": "Whenever a card is exhausted, gain 3 block."
+  },
+  "${modID}:PowerThrough": {
+    "NAME": "Power Through",
+    "DESCRIPTION": "Add 2 wounds into your hand. NL Gain !B! block."
+  },
+  "${modID}:Entrench": {
+    "NAME": "Entrench",
+    "DESCRIPTION": "Double your block."
   }
 
 }

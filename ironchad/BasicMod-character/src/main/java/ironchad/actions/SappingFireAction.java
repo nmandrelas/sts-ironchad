@@ -14,16 +14,14 @@ import ironchad.powers.MasochismPower;
 import java.util.Objects;
 
 public class SappingFireAction extends AbstractGameAction {
-    private DamageInfo info;
-    private float startingDuration;
+    private final DamageInfo info;
 
     public SappingFireAction(AbstractCreature target, DamageInfo info) {
         this.info = info;
         this.setValues(target, info);
         this.actionType = ActionType.WAIT;
         this.attackEffect = AttackEffect.FIRE;
-        this.startingDuration = Settings.ACTION_DUR_FAST;
-        this.duration = this.startingDuration;
+        this.duration = Settings.ACTION_DUR_FAST;
     }
 
     public void update() {
