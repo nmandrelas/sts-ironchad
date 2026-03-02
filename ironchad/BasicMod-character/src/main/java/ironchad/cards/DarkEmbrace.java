@@ -17,23 +17,14 @@ public class DarkEmbrace extends BaseCard {
             AbstractCard.CardTarget.SELF, //The target. Single target is ENEMY, all enemies is ALL_ENEMY. Look at cards similar to what you want to see what to use.
             2 //The card's base cost. -1 is X cost, -2 is no cost for unplayable cards like curses, or Reflex.
     );
-    private static final int BLOCK = 5;
-    private static final int UPG_BLOCK = 3;
-
     public DarkEmbrace() {
         super(ID, info); //Pass the required information to the BaseCard constructor.
+        int UPG_COST = 1;
+        setCostUpgrade(UPG_COST);
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         this.addToBot(new ApplyPowerAction(p, p, new DarkEmbracePower(p, 1), 1));
-    }
-
-    public void upgrade() {
-        if (!this.upgraded) {
-            this.upgradeName();
-            this.upgradeBaseCost(1);
-        }
-
     }
 }
 

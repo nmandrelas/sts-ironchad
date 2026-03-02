@@ -18,7 +18,7 @@ public class FeelNoPain extends BaseCard {
             1 //The card's base cost. -1 is X cost, -2 is no cost for unplayable cards like curses, or Reflex.
     );
     private static final int MAGIC = 3;
-    private static final int UPG_MAGIC = 4;
+    private static final int UPG_MAGIC = 1;
 
     public FeelNoPain() {
         super(ID, info); //Pass the required information to the BaseCard constructor.

@@ -20,18 +20,12 @@ public class Havoc extends BaseCard{
     );
     public Havoc() {
         super(ID, info); //Pass the required information to the BaseCard constructor.
+        int UPG_COST = 0;
+        setCostUpgrade(UPG_COST);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         this.addToBot(new PlayTopCardAction(AbstractDungeon.getCurrRoom().monsters.getRandomMonster((AbstractMonster)null, true, AbstractDungeon.cardRandomRng), true));
-    }
-
-    public void upgrade() {
-        if (!this.upgraded) {
-            this.upgradeName();
-            this.upgradeBaseCost(0);
-        }
-
     }
 }

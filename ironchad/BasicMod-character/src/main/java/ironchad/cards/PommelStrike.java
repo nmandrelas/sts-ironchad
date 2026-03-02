@@ -36,11 +36,4 @@ public class PommelStrike extends BaseCard{
         this.addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         this.addToBot(new DrawCardAction(p, this.magicNumber));
     }
-
-    public void upgrade() {
-        if (!this.upgraded) {
-            this.upgradeDamage(1);
-            this.upgradeMagicNumber(1);
-        }
-    }
 }

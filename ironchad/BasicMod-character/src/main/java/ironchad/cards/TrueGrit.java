@@ -32,12 +32,4 @@ public class TrueGrit extends BaseCard{
             this.addToBot(new ExhaustAction(1, true, false, false));
         }
     }
-
-    public void upgrade() {
-        if (!this.upgraded) {
-            this.upgradeName();
-            this.upgradeBaseCost(0);
-        }
-
-    }
 }

@@ -21,9 +21,9 @@
     "NAME": "Painful Headbutt",
     "DESCRIPTION": "Deal !D! damage. NL Take !M! damage."
   },
- "${modID}:PushForward": {
-    "NAME": "Push forward!",
-    "DESCRIPTION": "Take !D! damage. NL Draw !M! cards."
+ "${modID}:SoulOffering": {
+    "NAME": "Soul Offering",
+    "DESCRIPTION": "Lose !D! HP. NL Draw !M! cards."
   },
   "${modID}:DarkEmbrace": {
     "NAME": "Dark Embrace",
@@ -72,7 +72,7 @@
   },
   "${modID}:FeelNoPain": {
     "NAME": "Feel No Pain",
-    "DESCRIPTION": "Whenever a card is exhausted, gain 3 block."
+    "DESCRIPTION": "Whenever a card is exhausted, gain !M! block."
   },
   "${modID}:PowerThrough": {
     "NAME": "Power Through",
@@ -81,6 +81,37 @@
   "${modID}:Entrench": {
     "NAME": "Entrench",
     "DESCRIPTION": "Double your block."
+  },
+  "${modID}:Barricade": {
+    "NAME": "Barricade",
+    "DESCRIPTION": "Block is not removed at the start of your turn."
+  },
+  "${modID}:CompletedOffering": {
+    "NAME": "Completed Offering",
+    "DESCRIPTION": "Lose 6 HP. NL Gain 2 energy. NL Draw !M! cards. Exhaust."
+  },
+  "${modID}:Corruption": {
+    "NAME": "Corruption",
+    "DESCRIPTION": "Skills cost 0. NL Whenever you play a Skill, Exhaust it."
+  },
+  "${modID}:Exhume": {
+    "NAME": "Exhume",
+    "DESCRIPTION": "Put a card from your exhaust pile into your hand.NL Exhaust."
+  },
+  "${modID}:GhostlyArmor": {
+    "NAME": "Ghostly Armor",
+    "DESCRIPTION": "Ethereal. NL Gain !B! block."
+  },
+  "${modID}:Impervious": {
+    "NAME": "Impervious",
+    "DESCRIPTION": "Gain !B! block. NL Exhaust."
+  },
+  "${modID}:Rampage": {
+    "NAME": "Rampage",
+    "DESCRIPTION": "Deal !D! damage. NL Increase this card's damage by !M! this combat."
+  },
+  "${modID}:Sentinel": {
+    "NAME": "Sentinel",
+    "DESCRIPTION": "Gain !B! block. NL If this card is exhausted gain !M! energy."
   }
-
 }

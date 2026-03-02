@@ -32,9 +32,4 @@ public class PowerThrough extends BaseCard{
         this.addToBot(new MakeTempCardInHandAction(new Wound(), 2));
         this.addToBot(new GainBlockAction(p, p, this.block));
     }
-    public void upgrade() {
-        if (!this.upgraded) {
-            this.upgradeBaseCost(1);
-        }
-    }
 }
