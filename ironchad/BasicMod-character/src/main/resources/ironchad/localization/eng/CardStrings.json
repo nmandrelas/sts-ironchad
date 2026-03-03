@@ -17,8 +17,8 @@
     "NAME": "Defend",
     "DESCRIPTION": "Gain !B! block."
   },
-  "${modID}:PainfulHeadbutt": {
-    "NAME": "Painful Headbutt",
+  "${modID}:Tackle": {
+    "NAME": "Tackle",
     "DESCRIPTION": "Deal !D! damage. NL Take !M! damage."
   },
  "${modID}:SoulOffering": {
@@ -87,8 +87,8 @@
     "DESCRIPTION": "Block is not removed at the start of your turn."
   },
   "${modID}:CompletedOffering": {
-    "NAME": "Completed Offering",
-    "DESCRIPTION": "Lose 6 HP. NL Gain 2 energy. NL Draw !M! cards. Exhaust."
+    "NAME": "Complete Offering",
+    "DESCRIPTION": "Lose 6 HP. NL Gain [E] [E]. NL Draw !M! cards. Exhaust."
   },
   "${modID}:Corruption": {
     "NAME": "Corruption",
@@ -96,7 +96,7 @@
   },
   "${modID}:Exhume": {
     "NAME": "Exhume",
-    "DESCRIPTION": "Put a card from your exhaust pile into your hand.NL Exhaust."
+    "DESCRIPTION": "Put a card from your exhaust pile into your hand. NL Exhaust."
   },
   "${modID}:GhostlyArmor": {
     "NAME": "Ghostly Armor",
@@ -112,6 +112,52 @@
   },
   "${modID}:Sentinel": {
     "NAME": "Sentinel",
-    "DESCRIPTION": "Gain !B! block. NL If this card is exhausted gain !M! energy."
+    "DESCRIPTION": "Gain !B! block. NL If this card is exhausted gain  [E] [E] .",
+    "UPGRADE_DESCRIPTION": "Gain !B! block. NL If this card is exhausted gain  [E] [E] [E]."
+  },
+  "${modID}:BloodForBlood": {
+    "NAME": "Blood For Blood",
+    "DESCRIPTION": "Costs 1 less [E] for each time you lose HP this combat. NL Deal !D! damage."
+  },
+  "${modID}:BodyOffering": {
+    "NAME": "Body Offering",
+    "DESCRIPTION": "Lose 3 HP. NL Gain [E] [E].",
+    "UPGRADE_DESCRIPTION": "Lose 3 HP. NL Gain [E] [E] [E]."
+  },
+  "${modID}:Brutality": {
+    "NAME": "Brutality",
+    "DESCRIPTION": "At the start of your turn lose 1 HP and draw 1 card.",
+    "UPGRADE_DESCRIPTION": "Innate. NL At the start of your turn lose 1 HP and draw 1 card."
+  },
+  "${modID}:Carnage": {
+    "NAME": "Carnage",
+    "DESCRIPTION": "Ethereal. NL Deal !D! damage."
+  },
+  "${modID}:Combust": {
+    "NAME": "Combust",
+    "DESCRIPTION": "At the end of your turn lose 1 HP and deal !M! damage to ALL enemies."
+  },
+  "${modID}:DualWield": {
+    "NAME": "Dual Wield",
+    "DESCRIPTION": "Choose an Attack or Power card. Add a copy of that card to your hand.",
+    "UPGRADE_DESCRIPTION": "Choose an Attack or Power card. Add 2 copies of that card to your hand."
+  },
+  "${modID}:Headbutt": {
+    "NAME": "Headbutt",
+    "DESCRIPTION": "Deal !D! damage. NL Put a card from your discard pile on top of your draw pile."
+  },
+  "${modID}:Multitap": {
+    "NAME": "Multitap",
+    "DESCRIPTION": "Your next attack this turn is played twice.",
+    "UPGRADE_DESCRIPTION": "Your next attack this turn is played thrice."
+  },
+  "${modID}:Rupture": {
+    "NAME": "Rupture",
+    "DESCRIPTION": "Whenever you lose HP, gain !M! Strength."
+  },
+  "${modID}:SacrificialLamp": {
+    "NAME": "Sacrificial Lamp",
+    "DESCRIPTION": "Exhaust a card in your hand. NL Add a card from your discard or draw pile to your hand. NL Exhaust."
   }
+
 }
