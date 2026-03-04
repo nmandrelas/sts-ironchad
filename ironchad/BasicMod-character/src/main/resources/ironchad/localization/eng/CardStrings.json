@@ -244,6 +244,38 @@
   "${modID}:ZeroThoughts": {
     "NAME": "Zero Thoughts",
     "DESCRIPTION": "Whenever you play an attack card, gain !M! block."
+  },
+  "${modID}:Branded": {
+    "NAME": "Branded",
+    "DESCRIPTION": "Whenever you draw a burn deal !M! damage to all enemies."
+  },
+  "${modID}:CorruptingStrike": {
+    "NAME": "Corrupting Strike",
+    "DESCRIPTION": "Deal !D! damage, play a card in your hand for free, exhaust it and gain burns equal to its cost.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage, play a card in your hand for free, exhaust it and gain burns equal to its cost -1."
+  },
+  "${modID}:FieryStrike": {
+    "NAME": "Fiery Strike",
+    "DESCRIPTION": "Deal !D! damage, add a burn to your draw pile."
+  },
+  "${modID}:FlameBreath": {
+    "NAME": "Flame Breath",
+    "DESCRIPTION": "Deal !D! damage to all enemies, add a burn to your discard pile."
+  },
+  "${modID}:FueledByFire": {
+    "NAME": "Fueled By Fire",
+    "DESCRIPTION": "Draw !M! cards, add a burn to your discard pile."
+  },
+  "${modID}:Inferno": {
+    "NAME": "Inferno",
+    "DESCRIPTION": "Exhaust all burns, deal !D! damage to a random enemy () times.",
+    "EXTENDED_DESCRIPTION": [
+      "Exhaust all burns, deal !D! damage to a random enemy (",
+      ") times."
+    ]
+  },
+  "${modID}:MaledictionOfFlames": {
+    "NAME": "Malediction Of Flames",
+    "DESCRIPTION": "Transform every and any future curse or status card into a burn."
   }
-
 }

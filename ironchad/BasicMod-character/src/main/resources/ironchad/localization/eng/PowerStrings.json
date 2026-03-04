@@ -30,6 +30,18 @@
       "Whenever you play an attack gain ",
       " block."
     ]
+  },
+  "${modID}:BrandedPower": {
+    "NAME": "Branded",
+    "DESCRIPTIONS": [
+      "Whenever you draw a burn deal ",
+      " damage."
+    ]
+  },
+  "${modID}:MaledictionOfFlamesPower": {
+    "NAME": "Malediction Of Flames",
+    "DESCRIPTIONS": [
+      "Replace all status and curse cards you receive burns."
+    ]
   }
-
 }
