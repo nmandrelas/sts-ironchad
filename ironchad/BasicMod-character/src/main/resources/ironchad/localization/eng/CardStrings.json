@@ -277,5 +277,43 @@
   "${modID}:MaledictionOfFlames": {
     "NAME": "Malediction Of Flames",
     "DESCRIPTION": "Transform every and any future curse or status card into a burn."
+  },
+  "${modID}:BlindStrike": {
+    "NAME": "Blind Strike",
+    "DESCRIPTION": "Deal !D! damage to a random enemy."
+  },
+  "${modID}:CantHaveEnough": {
+    "NAME": "Can't Have Enough",
+    "DESCRIPTION": "Double your masochism."
+  },
+  "${modID}:DesperateStrike": {
+    "NAME": "Desperate Strike",
+    "DESCRIPTION": "Deal !D! damage, gain block equal to your masochism."
+  },
+  "${modID}:EnragedStrike": {
+    "NAME": "Enraged Strike",
+    "DESCRIPTION": "Deal !D! damage, gain damage equal to !M! times your masochism."
+  },
+  "${modID}:FollowThrough": {
+    "NAME": "Follow Through",
+    "DESCRIPTION": "Deal !D! damage !M! times, sap on every instance."
+  },
+  "${modID}:InfernalBlade": {
+    "NAME": "Infernal Blade",
+    "DESCRIPTION": "Add a random attack to your hand, it costs 0 this turn. Add 2 burns. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Add a random attack to your hand, it costs 0 this combat. Add 2 burns. NL Exhaust."
+  },
+  "${modID}:PerfectedStrike": {
+    "NAME": "Perfected Strike",
+    "DESCRIPTION": "Deal !D! damage. Deal !M! additional damage for ALL your cards containing \"Strike\" "
+  },
+  "${modID}:PushThrough": {
+    "NAME": "Push Through",
+    "DESCRIPTION": "Deal !D! damage. If you have masochism, draw a card"
   }
+
+
+
+
+
 }

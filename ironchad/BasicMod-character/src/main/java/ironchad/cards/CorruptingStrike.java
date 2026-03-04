@@ -28,6 +28,7 @@ public class CorruptingStrike extends BaseCard {
 
     public CorruptingStrike() {
         super(ID, info); //Pass the required information to the BaseCard constructor.
+        tags.add(CardTags.STRIKE);
 
         setDamage(DAMAGE); //Sets the card's damage and how much it changes when upgraded.
         setMagic(BURNS_TO_ADD, UPG_BURNS_TO_ADD);
@@ -37,7 +38,5 @@ public class CorruptingStrike extends BaseCard {
     public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
         this.addToBot(new DamageAction(abstractMonster, new DamageInfo(abstractPlayer, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
         this.addToBot(new CorruptingStrikeAction(this.magicNumber));
-
-
     }
 }
