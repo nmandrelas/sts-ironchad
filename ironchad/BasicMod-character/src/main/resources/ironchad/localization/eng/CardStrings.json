@@ -158,6 +158,42 @@
   "${modID}:SacrificialLamp": {
     "NAME": "Sacrificial Lamp",
     "DESCRIPTION": "Exhaust a card in your hand. NL Add a card from your discard or draw pile to your hand. NL Exhaust."
+  },
+  "${modID}:Armaments": {
+    "NAME": "Armaments",
+    "DESCRIPTION": "Gain !B! block. NL Upgrade a card in your hand for the rest of the combat.",
+    "UPGRADE_DESCRIPTION": "Gain !B! block. NL Upgrade your hand for the rest of the combat."
+  },
+  "${modID}:BurningPact": {
+    "NAME": "Burning Pact",
+    "DESCRIPTION": "Exhaust 1 card. NL Draw !M! cards."
+  },
+  "${modID}:Clash": {
+    "NAME": "Clash",
+    "DESCRIPTION": "Can only be played if every card in your hand is an attack. NL Deal !D! damage."
+  },
+  "${modID}:Feed": {
+    "NAME": "Feed",
+    "DESCRIPTION": "Deal !D! damage. NL If fatal, raise your max HP by !M!. NL Exhaust."
+  },
+  "${modID}:Juggernaut": {
+    "NAME": "Juggernaut",
+    "DESCRIPTION": "Whenever you gain block, deal !M! damage to a random enemy."
+  },
+  "${modID}:SearingBlow": {
+    "NAME": "Searing Blow",
+    "DESCRIPTION": "Deal !D! damage. NL Can be upgraded any number of times."
+  },
+  "${modID}:SecondWind": {
+    "NAME": "Second Wind",
+    "DESCRIPTION": "Exhaust all non-attack cards in your hand. NL Gain !B! block for each card exhausted."
   }
+
+
+
+
+
+
+
 
 }
