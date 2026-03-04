@@ -11,12 +11,12 @@ import static ironchad.BasicMod.makeID;
 
 public class BurnedBlood extends BaseRelic  {
     private static final String NAME = "BurnedBlood"; //The name will be used for determining the image file as well as the ID.
-    public static final String ID = makeID(NAME); //This adds the mod's prefix to the relic ID, resulting in modID:MyRelic
+    public static final String ID = makeID(BurnedBlood.class.getSimpleName()); //This adds the mod's prefix to the relic ID, resulting in modID:MyRelic
     private static final RelicTier RARITY = RelicTier.STARTER; //The relic's rarity.
     private static final LandingSound SOUND = LandingSound.CLINK; //The sound played when the relic is clicked.
 
     public BurnedBlood() {
-        super(ID, NAME, IronChad.Meta.CARD_COLOR, RARITY, SOUND);
+        super(ID, "image_name", IronChad.Meta.CARD_COLOR, RARITY, SOUND);
     }
 
     @Override

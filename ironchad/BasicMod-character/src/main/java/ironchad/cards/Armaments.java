@@ -9,7 +9,6 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import ironchad.character.IronChad;
 import ironchad.util.CardStats;
 
-// TODO
 public class Armaments extends BaseCard {
     public static final String ID = makeID(Armaments.class.getSimpleName());
     private static final CardStats info = new CardStats(

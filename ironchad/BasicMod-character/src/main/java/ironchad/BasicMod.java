@@ -132,6 +132,9 @@ public class BasicMod implements
     @Override
     public void receiveEditKeywords()
     {
+        BaseMod.addKeyword(new String[]{"sap", "SAP", "Sap"},"Heal for the amount of the masochism stacks you have, then lose masochism.");
+        BaseMod.addKeyword(new String[]{"masochism", "Masochism"},"Whenever you take damage from your cards, gain 1 stack.");
+
         Gson gson = new Gson();
         String json = Gdx.files.internal(localizationPath(defaultLanguage, "Keywords.json")).readString(String.valueOf(StandardCharsets.UTF_8));
         KeywordInfo[] keywords = gson.fromJson(json, KeywordInfo[].class);

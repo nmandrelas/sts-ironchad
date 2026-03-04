@@ -13,18 +13,11 @@ import static ironchad.BasicMod.makeID;
 
 public class TripleTapPower extends BasePower{
     private static final String NAME = "Triple Tap";
-    public static final String ID = makeID(NAME);
+    public static final String ID = makeID(TripleTapPower.class.getSimpleName());
     public TripleTapPower(int amount){
         super(ID, PowerType.BUFF,false, AbstractDungeon.player,amount);
     }
 
-    public void wasHPLost(DamageInfo info, int damageAmount) {
-        if (damageAmount > 0 && info.owner == this.owner) {
-            this.flash();
-            amount += 1;
-        }
-    }
-    
     public void onUseCard(AbstractCard card, UseCardAction action) {
         if (!card.purgeOnUse && card.type == AbstractCard.CardType.ATTACK && this.amount > 0) {
             this.flash();

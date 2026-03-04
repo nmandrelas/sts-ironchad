@@ -35,7 +35,7 @@
   },
   "${modID}:SappingSlashes": {
     "NAME": "Sapping Slashes",
-    "DESCRIPTION": "Deal !D! damage !M! times, sap on every instance."
+    "DESCRIPTION": "Deal !D! damage !M! times, sap on every instance. NL Exhaust."
   },
   "${modID}:SappingFire": {
     "NAME": "Sapping Fire",
@@ -187,13 +187,63 @@
   "${modID}:SecondWind": {
     "NAME": "Second Wind",
     "DESCRIPTION": "Exhaust all non-attack cards in your hand. NL Gain !B! block for each card exhausted."
+  },
+  "${modID}:Bloodlust": {
+    "NAME": "Bloodlust",
+    "DESCRIPTION": "Deal !D! damage, sapping each time."
+  },
+  "${modID}:QuickPatch": {
+    "NAME": "Quick Patch",
+    "DESCRIPTION": "Discard your hand, heal !M! for each card discarded. NL Exhaust."
+  },
+  "${modID}:AppetiteForPain": {
+    "NAME": "Appetite For Pain",
+    "DESCRIPTION": "Gain !M! masochism."
+  },
+  "${modID}:PainRemains": {
+    "NAME": "Pain Remains",
+    "DESCRIPTION": "Whenever you take !M! damage from your cards, gain 2 intangible."
+  },
+  "${modID}:ALegForAnArm": {
+    "NAME": "A leg for an arm",
+    "DESCRIPTION": "Lose 2 HP, enemy loses !M! strength."
+  },
+  "${modID}:Counterfort": {
+    "NAME": "Counterfort",
+    "DESCRIPTION": "Gain !B! block, deal damage equal to your block."
+  },
+  "${modID}:CullTheWeak": {
+    "NAME": "Cull The Weak",
+    "DESCRIPTION": "Deal !D! damage X times to the enemy with the lowest HP, if he is below 50% deal double damage."
+  },
+  "${modID}:Evolve": {
+    "NAME": "Evolve",
+    "DESCRIPTION": "Whenever you draw a Status card, draw a card.",
+    "UPGRADE_DESCRIPTION": "Whenever you draw a Status card, draw !M! cards."
+  },
+  "${modID}:LifeLeech": {
+    "NAME": "Life Leech",
+    "DESCRIPTION": "Deal !D! damage, sap."
+  },
+  "${modID}:Thunderclap": {
+    "NAME": "Thunderclap",
+    "DESCRIPTION": "Deal !D! damage to all enemies, apply 1 vulnerable."
+  },
+  "${modID}:WeakWills": {
+    "NAME": "Weak Wills",
+    "DESCRIPTION": "Deal !D! damage to all enemies, apply !M! weak."
+  },
+  "${modID}:ZeroConsequences": {
+    "NAME": "Zero Consequences",
+    "DESCRIPTION": "Lose !M! HP, gain 1 intangible."
+  },
+  "${modID}:ZeroRegrets": {
+    "NAME": "Zero Regrets",
+    "DESCRIPTION": "Gain 1 vulnerable, deal !D! damage."
+  },
+  "${modID}:ZeroThoughts": {
+    "NAME": "Zero Thoughts",
+    "DESCRIPTION": "Whenever you play an attack card, gain !M! block."
   }
-
-
-
-
-
-
-
 
 }

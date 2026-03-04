@@ -5,10 +5,31 @@
       "You are Very Cool and Strong."
     ]
   },
-  "${modID}:Masochism": {
+  "${modID}:MasochismPower": {
     "NAME": "Masochism",
     "DESCRIPTIONS": [
       "Whenever you do damage to yourself gain 1 stack."
     ]
+  },
+  "${modID}:PainRemainsPower": {
+    "NAME": "Pain Remains",
+    "DESCRIPTIONS": [
+      "Whenever you take  ",
+      " damage from your cards damage to yourself become intangible for 2 turns."
+    ]
+  },
+  "${modID}:TripleTapPower": {
+    "NAME": "Triple Tap",
+    "DESCRIPTIONS": [
+      "Your next attack is played three times."
+    ]
+  },
+  "${modID}:ZeroThoughtsPower": {
+    "NAME": "Zero Thoughts",
+    "DESCRIPTIONS": [
+      "Whenever you play an attack gain ",
+      " block."
+    ]
   }
+
 }

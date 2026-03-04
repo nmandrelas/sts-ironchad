@@ -1,41 +1,34 @@
 package ironchad.cards;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.DiscardAction;
-import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
+import com.megacrit.cardcrawl.actions.common.LoseHPAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.LoseStrengthPower;
 import ironchad.character.IronChad;
 import ironchad.util.CardStats;
 
-// TODO
-// Skill -> Common, discard your hand heal 1 foreach card discarded
-public class QuickPatch extends BaseCard{
-    public static final String ID = makeID(QuickPatch.class.getSimpleName());
+public class ALegForAnArm extends BaseCard {
+    public static final String ID = makeID(ALegForAnArm.class.getSimpleName());
     private static final CardStats info = new CardStats(
             IronChad.Meta.CARD_COLOR, //The card color. If you're making your own character, it'll look something like this. Otherwise, it'll be CardColor.RED or similar for a basegame character color.
-            CardType.SKILL, //The type. ATTACK/SKILL/POWER/CURSE/STATUS
+            AbstractCard.CardType.SKILL, //The type. ATTACK/SKILL/POWER/CURSE/STATUS
             CardRarity.UNCOMMON, //Rarity. BASIC is for starting cards, then there's COMMON/UNCOMMON/RARE, and then SPECIAL and CURSE. SPECIAL is for cards you only get from events. Curse is for curses, except for special curses like Curse of the Bell and Necronomicurse.
-            AbstractCard.CardTarget.SELF, //The target. Single target is ENEMY, all enemies is ALL_ENEMY. Look at cards similar to what you want to see what to use.
+            CardTarget.ENEMY, //The target. Single target is ENEMY, all enemies is ALL_ENEMY. Look at cards similar to what you want to see what to use.
             1 //The card's base cost. -1 is X cost, -2 is no cost for unplayable cards like curses, or Reflex.
     );
-
-    public QuickPatch() {
+    private static final int HEALTH_LOST = 2;
+    public ALegForAnArm() {
         super(ID, info); //Pass the required information to the BaseCard constructor.
-        int UPG_COST = 0;
-        setCostUpgrade(UPG_COST);
-
-        int HEAL_AMOUNT = 1;
-        setMagic(HEAL_AMOUNT);
-
-        this.exhaust = true;
+        int STR_LOSS = 4;
+        int UPG_STR_LOSS = 2;
+        setMagic(STR_LOSS, UPG_STR_LOSS);
     }
 
-    public void use(AbstractPlayer player, AbstractMonster monster) {
-        int handSize = player.hand.size();
-        addToBot(new DiscardAction(player, player, handSize, false));
-        AbstractDungeon.player.heal(handSize * this.magicNumber);
+    @Override
+    public void use(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster) {
+        this.addToBot(new LoseHPAction(abstractPlayer, abstractPlayer, 2));
+        this.addToBot(new ApplyPowerAction(abstractMonster, abstractPlayer, new LoseStrengthPower(abstractMonster, this.magicNumber)));
     }
 }

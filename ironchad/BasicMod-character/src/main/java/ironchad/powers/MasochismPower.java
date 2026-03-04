@@ -12,7 +12,7 @@ import static ironchad.BasicMod.makeID;
 
 public class MasochismPower extends BasePower {
     private static final String NAME = "Masochism";
-    public static final String ID = makeID(NAME);
+    public static final String ID = makeID(MasochismPower.class.getSimpleName());
     //    public BasePower(String id, PowerType powerType, boolean isTurnBased, AbstractCreature owner, int amount) {
     public MasochismPower(int amount){
         super(ID, PowerType.BUFF,false, AbstractDungeon.player,amount);

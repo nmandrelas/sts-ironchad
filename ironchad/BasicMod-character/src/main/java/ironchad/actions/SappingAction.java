@@ -40,9 +40,9 @@ public class SappingAction extends AbstractGameAction {
         }
         int extraDamage = masochismPower == null ? 0 : masochismPower.amount;
         int healAmount = 0;
+        this.info.base += extraDamage;
+        healAmount = this.info.base;
         for(int i =0; i < replicateTimes; i++) {
-            this.info.base += extraDamage;
-            healAmount = this.info.base;
             this.addToTop(new DamageAction(this.target, this.info, AttackEffect.FIRE));
             AbstractDungeon.player.heal(healAmount);
         }
