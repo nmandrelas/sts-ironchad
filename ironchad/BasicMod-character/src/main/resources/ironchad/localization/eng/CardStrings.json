@@ -268,10 +268,10 @@
   },
   "${modID}:Inferno": {
     "NAME": "Inferno",
-    "DESCRIPTION": "Exhaust all burns, deal !D! damage to a random enemy () times.",
+    "DESCRIPTION": "Exhaust all burns, deal !D! damage to a random enemy () times. NL Exhaust.",
     "EXTENDED_DESCRIPTION": [
       "Exhaust all burns, deal !D! damage to a random enemy (",
-      ") times."
+      ") times. NL Exhaust."
     ]
   },
   "${modID}:MaledictionOfFlames": {

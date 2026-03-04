@@ -2,9 +2,7 @@ package ironchad.cards;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.AttackDamageRandomEnemyAction;
-import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.ExhaustSpecificCardAction;
-import com.megacrit.cardcrawl.actions.common.MakeTempCardInDiscardAction;
 import com.megacrit.cardcrawl.actions.utility.WaitAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.status.Burn;
@@ -31,6 +29,7 @@ public class Inferno extends BaseCard{
         super(ID, info); //Pass the required information to the BaseCard constructor.
         setDamage(DMG, UPG_DMG);
         this.cardsToPreview = new Burn();
+        this.exhaust = true;
 
     }
 
