@@ -48,5 +48,8 @@ public class MaledictionOfFlamesPower extends BasePower{
             i++;
         }
     }
+    public void updateDescription() {
+        this.description = DESCRIPTIONS[0];
+    }
 
 }
